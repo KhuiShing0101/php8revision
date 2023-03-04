@@ -105,3 +105,24 @@ add(1,0);
 
     profile ("alice","alice@gmail.com",22);
 ?>
+
+<?php
+    // Named Arguments in Php 8
+
+    function userProfile( $name, $email, $age) {
+        echo "$name ($age) @ $email";
+    }
+    userProfile (name:"alice",age:"22",email:"bob@gmail.com");
+?>
+
+<?php
+    // Named Arguments in PHP 8
+
+    function adminProfile($name,$email,$age){
+        echo "$name ($age) $email";
+    }
+    adminProfile (name:"alice",
+                    age:"22",
+                    email:"alice@gmail.com",
+                 )
+?>
