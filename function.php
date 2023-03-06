@@ -121,7 +121,8 @@ add(1,0);
     function adminProfile($name,$email,$age){
         echo "$name ($age) $email";
     }
-    adminProfile (name:"alice",
+    adminProfile (
+                    name:"alice",
                     age:"22",
                     email:"alice@gmail.com",
                  )
